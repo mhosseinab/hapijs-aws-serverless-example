@@ -1,0 +1,27 @@
+{
+  "name": "hapijs-app",
+  "version": "0.1.0",
+  "description": "HapiJS APIs on amazon AWS",
+  "scripts": {
+    "start": "./node_modules/.bin/sls offline",
+    "deploy": "./node_modules/.bin/sls deploy -v",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/standard --fix"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.25",
+    "@types/node": "^12.0.0",
+    "serverless": "^1.42.2",
+    "serverless-offline": "^4.10.0",
+    "serverless-plugin-webpack": "^1.5.1",
+    "serverless-webpack": "^5.3.0",
+    "standard": "^12.0.1",
+    "webpack": "^4.31.0"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^17.8.5",
+    "serverless-http": "^2.0.1"
+  }
+}
